@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@600&display=swap&effect=shadow-multiple|3d');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
 
 }
 .tittle{
@@ -187,7 +189,7 @@ section{
     min-height: 100vh;
     padding:0 100px;
     display: flex;
-    background-color:#ceff97;
+    background-color:rgb(188, 240, 204);
     justify-content: space-between;
     align-items: center;
 }
@@ -212,9 +214,9 @@ section{
     font-weight: 500;
 }
 .content .textbox h2 span{
-    color:#017143;
+    
     font-size: 1.2em;
-    font-weight: 900;
+    font-weight: 1000;
     margin-left: 10px;
 }
 .content .textbox p{
@@ -281,29 +283,58 @@ section{
     flex-direction: column;
 }
 .sci li{
-    list-style: none;
+    list-style:none;
+    position: relative;
+    margin-right: -90px;
+     
 }
-.sci li:hover{
-    transform: translateY(-8px);
-    transition: 0.8s;
-}
+
+
 
 .sci li i{
     display: inline-block;
-    margin: 5px 0;
-    transform: scale(0.6);
-    font-size: 60px;
-    cursor: pointer;   
+    margin: 10px 20px;
+    font-size: 40px;
+    cursor: pointer;  
+    transition: all 0.29s ease-in-out;   
 }
-.sci .fa-facebook{
-    color: #4267B2;
+.sci i:first-child{
+    color:#898a8d
 }
-.sci .fa-instagram{
-color:#fb3958;
+.facebook2{
+    opacity: 0;
 }
-.sci .fa-youtube{
-    color: red;
+.instagram2{
+    opacity: 0;
 }
+.youtube2{
+    opacity: 0;
+}
+.sci li:hover .facebook2{
+    opacity: 1;
+    transform: translateX(-80px);
+    color:#4267b2;
+    transition-delay: 0.29s;
+
+}
+.sci li:hover .instagram2{
+    opacity: 1;
+    transform: translateX(-75px);
+    color:#fb3958;
+    transition-delay: 0.29s;
+
+}
+.sci li:hover .youtube2{
+    opacity: 1;
+    color:red;
+    transform: translateX(-85px);
+    transition-delay: 0.29s;
+   }
+
+
+
+
+
 main{
     background-color:rgb(238, 235, 235);
 }
@@ -324,9 +355,10 @@ main{
 }
 .navbar-doc li{
     width: 100%;
+    cursor: pointer;
     
     padding: 12px;
-    background-color:#FFDADA;
+    background-color:#D6D2C4;
     align-items: left;
     list-style: none;
     border-bottom: 2px solid #fff;
@@ -341,14 +373,12 @@ main{
     float: right;
     font-size: 18px;
     color: #333;
-}
-.navbar-doc li:hover{
-    transform: translateY(-2px);
-    transition: 0.5s linear;
+
 }
 .navbar-doc ul li:first-child a{
     font-size: larger;
     font-weight: bold;
+    transform: none;
 }
 
 
@@ -380,22 +410,30 @@ main{
     height: 260px;
     padding: 20px 10px;
     position: relative;
-    background-color: #FDF6F0;
+    background-color: #CEE5D0;
     border: 1px solid #fff;
     border-radius: 4px;
+    overflow: hidden;
+    
 }
 
 
 .img img{
-    width: 80%;
+    max-width: 80%;
     border-radius: 4px;
     margin-bottom: 12px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+    
+    
     
 }
 .img img:hover{
-    transform: translateY(-10px);
-    transition: 0.5s linear;
+    transform: scale(1.8);
+    
+
+    filter:  saturate(120%);
+    filter: brightness(110%);
 }
 .img .cost{
     position: relative;

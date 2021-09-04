@@ -1,0 +1,9 @@
+@media (max-width:1023px){
+    .hideonTablet{
+        display: none;
+    }
+    .maxwidth{
+        max-width: 100%;
+    }
+    
+}
